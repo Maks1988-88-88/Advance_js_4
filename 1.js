@@ -38,8 +38,8 @@ function Cashier(name, products) {
       pay = Number(pay);
 
       typeof pay;
-      console.log(`Вы заполатили ${pay} грн.`);
-    } while (Number.isNaN(pay) || pay <= this.totalPrice);
+      console.log(`Вы заплатили ${pay} грн.`);
+    } while (Number.isNaN(pay) || pay < this.totalPrice);
     this.customerMoney = pay;
   };
   this.countChange = function() {
